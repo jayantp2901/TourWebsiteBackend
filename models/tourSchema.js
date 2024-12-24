@@ -9,7 +9,7 @@ const tourOptionSchema = new mongoose.Schema({
   meeting_point: { type: String, required: true },
   drop_off: { type: String, required: true },
   duration: { type: Number, required: true },
-  duration_unit: { type: String, required: true },
+  duration_unit: { type: String, required : true, default: "Days" },
 });
 
 // Create and export the TourOption model
