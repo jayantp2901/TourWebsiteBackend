@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
-import { tourOptions } from '../init/data';  // Correctly import the tourOptions from data.js
-import { TourOption } from '../models/tourSchema';  // Correct path to the schema
+import { tourOptions } from './data.js';  // Correct import path with .js extension
+import { TourOption } from '../models/tourSchema.js';  // Correct relative path and extension
 
 const insertData = async () => {
   try {
