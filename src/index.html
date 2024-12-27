@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #444;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 6px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        li:hover {
+            transform: translateY(-5px);
+            background-color: #e9f7ff;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Tour API</h1>
+        <p>Your one-stop solution for managing tour-related operations</p>
+    </header>
+
+    <div class="container">
+        <p>Use the following endpoints for various operations:</p>
+        <ul>
+            <li><a href="/tour">GET /tour</a>: Retrieve all tours</li>
+            <li><a href="/tour/:id">GET /tour/:id</a>: Retrieve a specific tour</li>
+            <li><a href="/tour">POST /tour</a>: Create a new tour</li>
+            <li><a href="/tour/:id">PUT /tour/:id</a>: Update a specific tour</li>
+            <li><a href="/tour/:id">DELETE /tour/:id</a>: Delete a specific tour</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 Tour API. All rights reserved.
+    </footer>
+</body>
+</html>
