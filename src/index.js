@@ -20,6 +20,11 @@ app.use(express.json());
 
 // Use tourRouter for '/tour' endpoint
 app.use('/tour', tourRouter);
+// Base URL route
+app.get('/', (req, res) => {
+  res.status(200).send('Welcome to the Tour API. Use /tour for tour-related operations.');
+});
+
 
 // Start the server
 app.listen(port, () => {
